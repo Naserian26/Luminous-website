@@ -132,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
         loadPartial('goals-placeholder', 'partials/goals.html'),
         loadPartial('business-placeholder', 'partials/business.html'),
         loadPartial('services-placeholder', 'partials/services.html'),
-        loadPartial('products-placeholder', 'partials/products.html'),
         loadPartial('why-us-placeholder', 'partials/why_us.html'),
         loadPartial('structure-placeholder', 'partials/structure.html'),
         loadPartial('statutory-placeholder', 'partials/statutory.html', window.initLightbox),
