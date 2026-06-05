@@ -1,0 +1,33 @@
+/* ========================================
+   GOALS
+   ======================================== */
+.goals-list { max-width: 800px; margin: 0 auto; }
+.goal-item {
+    display: flex;
+    gap: 24px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--gray-200);
+    transition: var(--transition);
+}
+.goal-item:last-child { border-bottom: none; }
+.goal-item:hover { padding-left: 16px; }
+.goal-number {
+    flex-shrink: 0;
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--accent-200);
+    line-height: 1;
+    min-width: 60px;
+    transition: var(--transition);
+}
+.goal-item:hover .goal-number { color: var(--accent-500); }
+.goal-content h4 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-700);
+    margin-bottom: 6px;
+}
+.goal-content p { color: var(--gray-500); line-height: 1.6; }
+

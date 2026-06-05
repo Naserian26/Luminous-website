@@ -1,0 +1,43 @@
+/* ========================================
+   WHY US — Blue background like brand
+   ======================================== */
+.why-us { background: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-700) 100%); }
+.why-us .section-label { background: rgba(224,90,26,0.2); color: var(--accent-300); }
+.why-us .section-title { color: var(--white); }
+.why-us .section-description { color: rgba(255,255,255,0.7); }
+
+.why-us-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.why-us-card {
+    padding: 36px 28px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255,255,255,0.15);
+    text-align: center;
+    transition: var(--transition);
+}
+.why-us-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border-color: rgba(224,90,26,0.4);
+    background: rgba(255,255,255,0.12);
+}
+.why-us-icon {
+    width: 64px; height: 64px;
+    margin: 0 auto 20px;
+    display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, var(--accent-500), var(--accent-600));
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    font-size: 24px;
+    transition: var(--transition);
+}
+.why-us-card:hover .why-us-icon { transform: scale(1.1) rotate(5deg); box-shadow: var(--shadow-accent); }
+.why-us-card h4 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.why-us-card p { color: rgba(255,255,255,0.65); line-height: 1.6; font-size: 15px; }

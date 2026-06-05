@@ -1,0 +1,37 @@
+/* ========================================
+   BUSINESS CONCEPT
+   ======================================== */
+.business-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.business-card {
+    padding: 40px 32px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    text-align: center;
+    transition: var(--transition);
+}
+.business-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-400);
+}
+.business-card-icon {
+    width: 80px; height: 80px;
+    margin: 0 auto 24px;
+    display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, var(--primary-700), var(--primary-600));
+    color: var(--accent-400);
+    border-radius: var(--radius-lg);
+    font-size: 32px;
+    transition: var(--transition);
+}
+.business-card:hover .business-card-icon { transform: scale(1.1) rotate(5deg); background: var(--accent-500); color: var(--white); }
+.business-card h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-700);
+    margin-bottom: 12px;
+}
+.business-card p { color: var(--gray-500); line-height: 1.7; }
+

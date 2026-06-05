@@ -1,0 +1,45 @@
+/* ========================================
+   CORE VALUES
+   ======================================== */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.value-card {
+    padding: 32px 24px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    text-align: center;
+    transition: var(--transition);
+}
+.value-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-300);
+}
+.value-icon {
+    width: 56px; height: 56px;
+    margin: 0 auto 16px;
+    display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, var(--accent-100), var(--accent-200));
+    color: var(--accent-600);
+    border-radius: var(--radius-md);
+    font-size: 22px;
+    transition: var(--transition);
+}
+.value-card:hover .value-icon {
+    background: var(--accent-500);
+    color: var(--white);
+    transform: scale(1.1);
+}
+.value-card h4 {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-700);
+    margin-bottom: 8px;
+}
+.value-card p { font-size: 14px; color: var(--gray-500); line-height: 1.6; }
+

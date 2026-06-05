@@ -1,0 +1,36 @@
+/* ========================================
+   COMPANY STRUCTURE
+   ======================================== */
+.org-chart { max-width: 600px; margin: 0 auto; }
+.org-level { display: flex; justify-content: center; }
+.org-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 28px 40px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--gray-200);
+    transition: var(--transition);
+    min-width: 260px;
+}
+.org-node:hover { border-color: var(--accent-400); box-shadow: var(--shadow-accent); }
+.org-node-icon {
+    width: 56px; height: 56px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.org-md .org-node-icon { background: linear-gradient(135deg, var(--accent-500), var(--accent-600)); color: var(--white); }
+.org-dmd .org-node-icon { background: linear-gradient(135deg, var(--primary-700), var(--primary-600)); color: var(--white); }
+.org-staff .org-node-icon { background: var(--accent-100); color: var(--accent-600); }
+.org-node h4 {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-700);
+}
+.org-connector { display: flex; justify-content: center; padding: 4px 0; }
+.connector-line { width: 2px; height: 30px; background: var(--accent-300); }
+

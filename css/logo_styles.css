@@ -1,0 +1,49 @@
+/* ========================================
+   LOGO STYLES
+   ======================================== */
+.navbar-logo {
+    height: 52px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    /* Show on dark hero bg — logo has white bg so add subtle treatment */
+    border-radius: 6px;
+    transition: var(--transition);
+}
+.navbar.scrolled .navbar-logo {
+    /* on white navbar, logo shows naturally */
+    filter: none;
+}
+/* On transparent dark navbar, add slight background so logo is visible */
+.navbar:not(.scrolled) .navbar-logo {
+    background: rgba(255,255,255,0.92);
+    padding: 3px 8px;
+    border-radius: 8px;
+}
+.navbar-logo:hover { opacity: 0.88; transform: scale(1.02); }
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    margin-bottom: 16px;
+    background: var(--white);
+    padding: 6px 12px;
+    border-radius: var(--radius-md);
+}
+
+/* Fix contact map container */
+.contact-map {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    min-height: 450px;
+}
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    min-height: 450px;
+    border: none;
+}

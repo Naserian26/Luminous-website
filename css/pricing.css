@@ -1,0 +1,52 @@
+/* ========================================
+   PRICING
+   ======================================== */
+.pricing-table-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-200);
+}
+.table-scroll { overflow-x: auto; }
+.pricing-table { width: 100%; border-collapse: collapse; }
+.pricing-table thead { background: var(--primary-700); }
+.pricing-table th {
+    padding: 18px 24px;
+    text-align: left;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.pricing-table td {
+    padding: 16px 24px;
+    font-size: 15px;
+    color: var(--gray-700);
+    border-bottom: 1px solid var(--gray-100);
+}
+.pricing-table tbody tr { transition: var(--transition); }
+.pricing-table tbody tr:hover { background: var(--accent-100); }
+.pricing-table tbody tr:last-child td { border-bottom: none; }
+.product-name { font-weight: 500; color: var(--primary-700); }
+.price-cell {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--accent-600) !important;
+}
+.pricing-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    background: var(--gray-50);
+    font-size: 14px;
+    color: var(--gray-500);
+    border-top: 1px solid var(--gray-200);
+}
+.pricing-note i { color: var(--primary-600); }
+
